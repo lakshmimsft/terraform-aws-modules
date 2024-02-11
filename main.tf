@@ -12,7 +12,6 @@ resource "aws_s3_bucket" "bucket" {
   acl    = "private"
 
   tags = {
-    Name = var.bucket_name
     Environment = var.context.environment.name
     Applications = var.context.application.name
     Resource = var.context.resource.name
